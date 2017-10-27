@@ -27,6 +27,9 @@ is useful if you want to save an expression in a variable.}
 \description{
 Output and render functions for using gauge within Shiny
 applications and interactive Rmd documents.
+
+Output and render functions for using gauge within Shiny
+applications and interactive Rmd documents.
 }
 \examples{
 ## Only run this in interactive sessions

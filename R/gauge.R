@@ -1,13 +1,13 @@
 #' @title Create elegents interactive gauge illustrations
 #'
 #' @description An easy way to create gauge charts based on the rstudio
-#' js tutorials with functions for easy implementation in shiny
+#' js tutorials with functions for easy implementation in shiny.
 #'
 #' @import htmlwidgets
 #' @param value A numeric between 0 and 100. Represents a percentage.
-#'  @param width,height Must be a valid CSS unit (like \code{'100\%'},
-#'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
-#'   string and have \code{'px'} appended.
+#' @param width,height Must be a valid CSS
+#' unit (like \code{"100px"}, \code{'400px'}, \code{'auto'}) or a number,
+#' which will be coerced to a string and have \code{'px'} appended.
 #' @export
 #' @examples
 #' gauge(0)
@@ -32,9 +32,9 @@ gauge <- function(value, width = NULL, height = NULL) {
   )
 }
 
-#' Shiny bindings for gauge
+#' @title Shiny bindings for gauge
 #'
-#' Output and render functions for using gauge within Shiny
+#' @description Output and render functions for using gauge within Shiny
 #' applications and interactive Rmd documents.
 #'
 #' @param outputId output variable to read from
@@ -80,7 +80,10 @@ gauge <- function(value, width = NULL, height = NULL) {
 gaugeOutput <- function(outputId, width = '100%', height = '400px'){
   htmlwidgets::shinyWidgetOutput(outputId, 'gauge', width, height, package = 'gaugeR')
 }
-
+#' @title Shiny bindings for gauge
+#'
+#' @description Output and render functions for using gauge within Shiny
+#' applications and interactive Rmd documents.
 #' @rdname gauge-shiny
 #' @export
 renderGauge <- function(expr, env = parent.frame(), quoted = FALSE) {
