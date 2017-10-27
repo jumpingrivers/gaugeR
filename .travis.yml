@@ -1,0 +1,22 @@
+language: r
+
+cache: packages
+
+r:
+  - oldrel
+  - release
+  - devel
+
+r_packages:
+  - drat
+
+Imports: htmlwidgets
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+    
+after_success:
+  - wget https://raw.githubusercontent.com/jr-packages/drat/master/deploy.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh

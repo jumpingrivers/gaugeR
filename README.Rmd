@@ -1,5 +1,4 @@
 ---
-always_allow_html: yes
 output:
   md_document:
     variant: markdown_github
@@ -23,11 +22,7 @@ A function to create interactive gauge charts as well as output and render funct
 
 ## Installation
 
-```{r, echo = FALSE}
-library(gaugeR)
-```
-
-You can install gaugeR from github with:
+You can install **gaugeR** from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
@@ -38,10 +33,11 @@ devtools::install_github("jumpingrivers/gaugeR")
 
 This are some basic examples of the command `gauge()`:
 
-```{r example}
+```{r example, results = "hide", message=FALSE}
+library(gaugeR)
 gauge(0)
 gauge(50)
-gauge(c(3,3))
+gauge(1:4)
 ```
 
 ## Shiny Example

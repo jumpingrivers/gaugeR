@@ -7,11 +7,10 @@
 gauge(value, width = NULL, height = NULL)
 }
 \arguments{
-\item{value}{A numeric between 0 and 100. Represents a percentage.}
-
-\item{width}{The width of the html widget}
-
-\item{height}{The width of the html widget}
+\item{value}{A numeric between 0 and 100. Represents a percentage.
+@param width,height Must be a valid CSS unit (like \code{'100\%'},
+ \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
+ string and have \code{'px'} appended.}
 }
 \description{
 An easy way to create gauge charts based on the rstudio
@@ -22,5 +21,5 @@ gauge(0)
 
 gauge(50)
 
-gauge(c(3,3))
+gauge(1:4)
 }
