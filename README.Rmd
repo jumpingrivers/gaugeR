@@ -16,6 +16,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Build Status](https://travis-ci.org/jumpingrivers/gaugeR.svg?branch=master)](https://travis-ci.org/jumpingrivers/gaugeR)
+
 # gaugeR
 
 A function to create interactive gauge charts as well as output and render functions for using gauge within Shiny applications and interactive Rmd documents.
