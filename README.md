@@ -1,11 +1,19 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-gaugeR
-======
 
-A function to create interactive gauge charts as well as output and render functions for using gauge within Shiny applications and interactive Rmd documents.
+[![Lifecycle:
+deprecated](https://img.shields.io/badge/lifecycle-deprecated-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#deprecated)
+[![Build
+Status](https://travis-ci.org/jumpingrivers/headR.svg?branch=master)](https://travis-ci.org/jumpingrivers/headR)
+[![Build
+Status](https://travis-ci.org/jumpingrivers/gaugeR.svg?branch=master)](https://travis-ci.org/jumpingrivers/gaugeR)
 
-Installation
-------------
+# gaugeR
+
+A function to create interactive gauge charts as well as output and
+render functions for using gauge within Shiny applications and
+interactive Rmd documents.
+
+## Installation
 
 You can install **gaugeR** from github with:
 
@@ -14,20 +22,30 @@ You can install **gaugeR** from github with:
 devtools::install_github("jumpingrivers/gaugeR")
 ```
 
-Example
--------
+## Example
 
 This are some basic examples of the command `gauge()`:
 
 ``` r
 library(gaugeR)
 gauge(0)
+```
+
+![](README-example-1.png)
+
+``` r
 gauge(50)
+```
+
+![](README-example-2.png)
+
+``` r
 gauge(1:4)
 ```
 
-Shiny Example
--------------
+![](README-example-3.png)
+
+## Shiny Example
 
 Here is a very basic shiny app example
 
